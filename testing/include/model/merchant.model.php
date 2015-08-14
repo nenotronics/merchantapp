@@ -42,7 +42,7 @@ class Mechant{
 				                       country_code, postal_address, telephone, cellphone, fax, email, website, 
 				                       contact_person, bank_account_holder_name, bank_name, bank_branch_name, 
 				                       bank_branch_code, bank_account_number, bank_account_type, bank_card_pan, 
-				                       bank_card_expiry_date, bank_card_cvv2, tresury_reference, opened_date, 
+				                       bank_card_expiry_date, bank_card_cvv2, treasury_reference, opened_date, 
 				                       closed_date, closed_reason, narrative_msg_type) 
 				VALUES ()"
 		);
