@@ -55,10 +55,10 @@ class Mechant{
 		$st->execute($arr);
 	}
 	
-	public static function remove_user($arr = array()){
+	public static function remove_merchant($arr = array()){
 		global $db;
-		$st = $db->prepare("DELETE from user WHERE username=:username");
-		$st->execute($arr);
+		$st = $db->prepare("DELETE from merchant WHERE id=:id");
+		$st->execute($arr); 
 	}
 	
 	public static function update_merchant($arr = array()){
