@@ -10,11 +10,14 @@ class Mechant{
 		else if(isset($arr['id'])){
 			$st = $db->prepare("SELECT * FROM merchant WHERE id=:id");
 		}
-		else if(isset($arr['name'])){
-			$st = $db->prepare("SELECT * FROM user WHERE fname=:name OR lname:=name");
+		else if(isset($arr['status'])){
+			$st = $db->prepare("SELECT * FROM merchant WHERE status=:status");
 		}
-		else if(isset($arr['role_id'])){
-			$st = $db->prepare("SELECT * FROM user WHERE role_id=:role_id");
+		else if(isset($arr['institution_id'])){
+			$st = $db->prepare("SELECT * FROM merchant WHERE institution_id=:institution_id");
+		}
+		else if(isset($arr['merchant_type_id'])){
+			$st = $db->prepare("SELECT * FROM merchant WHERE merchant_type_id=:merchant_type_id");
 		}
 		else if(isset($arr['keyword'])){
 			$st = $db->prepare("SELECT * FROM user WHERE fname like :keyword AND lname like :keyword");
