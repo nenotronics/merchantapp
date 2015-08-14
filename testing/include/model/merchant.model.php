@@ -37,7 +37,13 @@ class Mechant{
 	public static function new_merchant($arr = array()){
 		global $db;
 		$st = $db->prepare(
-				"INSERT INTO merchant () 
+				"INSERT INTO merchant (name,status, addtional_reg, vat_reg_no, institution_id, merchant_type_id, 
+				                       head_card_acceptor, key_name, any_terminals, physical_address, state_code,
+				                       country_code, postal_address, telephone, cellphone, fax, email, website, 
+				                       contact_person, bank_account_holder_name, bank_name, bank_branch-name, 
+				                       bank_branch_code, bank_account_number, bank_account_type, bank_card_pan, 
+				                       bank_card_expiry_date, bank_card_cvv2, tresury_reference, opened_date, 
+				                       closed_date, closed_reason, narrative_msg_type) 
 				VALUES ()"
 		);
 		$st->execute($arr);
