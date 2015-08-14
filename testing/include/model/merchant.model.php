@@ -34,11 +34,11 @@ class Mechant{
 		return $st->fetchAll(PDO::FETCH_CLASS, "User");
 	}
 	
-	public static function new_user($arr = array()){
+	public static function new_merchant($arr = array()){
 		global $db;
 		$st = $db->prepare(
-				"INSERT INTO user (username, password, fname, lname, role_id) 
-				VALUES (:username, :password, :fname, :lname, :role_id)"
+				"INSERT INTO merchant () 
+				VALUES ()"
 		);
 		$st->execute($arr);
 	}
